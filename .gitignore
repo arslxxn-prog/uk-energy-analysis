@@ -1,0 +1,11 @@
+.venv/
+.venv-1/
+__pycache__/
+*.pyc
+
+data/raw/
+data/processed/
+
+.ipynb_checkpoints/
+
+*.pbix.autosave
