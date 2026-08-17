@@ -145,11 +145,13 @@ Raw electricity demand and generation datasets were collected and stored within 
 
 The project separates raw, processed and output data to maintain a reproducible workflow.
 
+
 ```text
 data/
 ├── raw/
 ├── processed/
 └── ...
+```
 
 2. Data validation
 
@@ -408,3 +410,4 @@ Open:
 ```text
 uk_energy_analysis
 └── README.md
+```
