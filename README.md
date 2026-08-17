@@ -100,19 +100,15 @@ Peak demand subsequently remained broadly within the same range, rather than fol
 
 ---
 
-# Data
+#  Data Sources
 
-The project uses Great Britain electricity demand and generation data at half-hourly resolution.
+This project combines two publicly available Great Britain electricity-system datasets.
 
-### Coverage
+### Elexon — FUELHH
 
-- **Period:** 2020–2025
-- **Geography:** Great Britain
-- **Granularity:** Half-hourly
-- **Demand:** MW
-- **Generation:** MW
+**Dataset:** FUELHH — Half-hourly generation outturn by fuel type
 
-Generation data includes sources such as:
+Used for generation-by-fuel analysis, including:
 
 - Gas
 - Wind
@@ -124,7 +120,34 @@ Generation data includes sources such as:
 - Pumped storage
 - Other generation
 
-The project also incorporates demand and generation derived metrics including:
+The FUELHH dataset provides half-hourly generation outturn by fuel type through Elexon's API Developer Portal. :contentReference[oaicite:0]{index=0}
+
+### National Energy System Operator (NESO) — Historic Demand Data
+
+**Dataset:** Historic Demand Data
+
+Used for electricity-demand analysis and demand validation, including:
+
+- National demand
+- Transmission system demand
+- Settlement date
+- Settlement period
+
+NESO describes the dataset as historic electricity demand and related system outturn data, with the data available at half-hourly settlement-period resolution. The dataset is published under the **NESO Open Data Licence**. :contentReference[oaicite:1]{index=1}
+
+### Coverage
+
+- **Period:** 2020–2025
+- **Geography:** Great Britain
+- **Granularity:** Half-hourly
+- **Demand:** MW
+- **Generation:** MW
+
+The datasets were aligned using UK settlement dates, settlement periods and constructed UK datetimes before being combined for analysis.
+
+### Derived Metrics
+
+The combined dataset was used to calculate:
 
 - Renewable share
 - Net demand
@@ -134,7 +157,6 @@ The project also incorporates demand and generation derived metrics including:
 - Demand bands
 - Peak indicators
 - Seasonal classifications
-
 ---
 
 # Methodology
