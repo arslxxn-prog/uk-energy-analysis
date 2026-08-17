@@ -163,8 +163,8 @@ Settlement-period consistency
 Data types
 Quality flags
 Alignment between demand and generation timestamps
-3. Data transformation
 
+3. Data transformation
 The half-hourly datasets were transformed into a common analytical structure.
 
 Key transformations included:
@@ -180,6 +180,7 @@ Weekend identification
 Generation aggregation
 Renewable generation calculation
 Net demand calculation
+
 4. Feature engineering
 
 Additional analytical variables were created, including:
@@ -197,7 +198,7 @@ season
 
 These features enabled analysis beyond simple demand and generation totals.
 
-Tools & Technologies
+Tools & Technologies:
 Python
 pandas
 NumPy
@@ -246,6 +247,9 @@ Wind generation
 Renewable demand coverage
 Demand patterns
 Generation mix
+
+![Executive Overview](docs/images/executive_overview.png)
+
 2. Demand & Peak Analysis
 
 Focuses on:
@@ -257,6 +261,9 @@ Net demand
 Demand by hour
 Peak demand by year
 Demand by day of week
+
+![Demand & Peak Analysis](docs/images/demand_peak_analysis.png)
+
 3. Generation & Renewable Analysis
 
 Focuses on:
@@ -266,6 +273,9 @@ Renewable share
 Wind generation
 Gas generation
 Generation mix by year
+
+![Generation & Renewable Analysis](docs/images/generation_renewable_analysis.png)
+
 4. Operational Patterns
 
 Focuses on:
@@ -276,12 +286,12 @@ Net-demand patterns across day and hour
 Operational periods of elevated residual demand
 Business / Energy Trading Relevance
 
+![Operational Patterns](docs/images/operational_patterns.png)
+
 The analysis is designed to demonstrate how energy data can be used to identify operational patterns and potential market-relevant signals.
 
 The most important observation is that total demand and residual demand behave differently.
-
 While total demand changed relatively little between 2020 and 2025, net demand declined substantially as renewable generation increased.
-
 The analysis also identifies the evening period as a key residual-demand window.
 
 For an energy analyst or trader, these patterns can support further investigation into:
@@ -347,14 +357,13 @@ Gas generation
 Weather
 Time features
 Historical prices
+
 4. Trading signals
 
 Develop a rule-based or machine-learning framework to identify periods where:
-
 High demand
 Low renewable output
 High gas dependency
-
 may correspond to elevated price risk.
 
 Project Structure
@@ -385,7 +394,7 @@ uk_energy_analysis/
 └── .gitignore
 Conclusion
 
-This project demonstrates an end-to-end data analytics workflow using real electricity system data.
+This project demonstrates an end to end data analytics workflow using real electricity system data.
 
 The analysis combines:
 
@@ -393,7 +402,7 @@ Data collection → validation → cleaning → feature engineering → explorat
 
 The main finding is that Great Britain's electricity system became increasingly renewable between 2020 and 2025, while residual demand and average gas generation declined. However, a pronounced evening residual-demand peak remained, highlighting the continued importance of understanding system flexibility and peak-period generation requirements.
 
-### Your next action
+### Next action
 
 Open:
 ```text
