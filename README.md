@@ -137,6 +137,8 @@ NESO describes the dataset as historic electricity demand and related system out
 
 ### Coverage
 
+- **Observations:** 105,169 half-hourly records
+- **Features:** 41 columns in the final analytical dataset
 - **Period:** 2020–2025
 - **Geography:** Great Britain
 - **Granularity:** Half-hourly
